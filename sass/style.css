@@ -1,0 +1,489 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+nav {
+  width: 100%;
+  max-width: 1280px !important;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #eee;
+  z-index: 1;
+}
+
+nav .logo {
+  width: 50%;
+  padding: 2em 0;
+  cursor: pointer;
+}
+
+nav .logo span {
+  font-size: 3rem;
+  word-spacing: 1.5px;
+}
+
+nav .logo span ion-icon {
+  display: inline-block;
+  padding-right: 0.2em;
+  margin-bottom: -3.5px;
+}
+
+nav .nav_items {
+  width: 50%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav .nav_items ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav_items ul li {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav_items ul li a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav_items ul li a:hover {
+  border-bottom: 1.5px solid black;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  height: 350px;
+  position: relative;
+}
+
+main .banner {
+  width: 50%;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+main .banner h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding-bottom: 0.6em;
+}
+
+main .banner input[type="email"] {
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 0.3em;
+  margin-bottom: 1.3em;
+}
+
+main .banner input[type="email"]::-webkit-input-placeholder {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .banner input[type="email"]:-ms-input-placeholder {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .banner input[type="email"]::-ms-input-placeholder {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .banner input[type="email"]::placeholder {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .banner button {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+  border: none;
+  outline: none;
+  background: orange;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 5px #666666;
+          box-shadow: 3px 3px 5px #666666;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .banner button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ff9100;
+  letter-spacing: 1px;
+}
+
+section {
+  width: 100%;
+}
+
+section .services {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5.5rem 0;
+}
+
+section .services .service_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+
+section .services .service_row .service_icon {
+  width: 12%;
+  font-size: 8rem;
+  color: #ff9100;
+}
+
+section .services .service_row .service_icon ion-icon {
+  margin-bottom: -13px;
+}
+
+section .services .service_row .service_text {
+  width: 88%;
+}
+
+section .services .service_row .service_text h1 {
+  font-size: 2.3rem;
+  padding-bottom: 0.3em;
+}
+
+section .services .service_row .service_text p {
+  font-size: 1.5rem;
+}
+
+section .service_video {
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+article {
+  width: 100%;
+  padding: 8rem 1rem;
+}
+
+article .cards_cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article .cards_cont .card {
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 2em;
+}
+
+article .cards_cont .card h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: #666666;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding: 0.5em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+article .cards_cont .card h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.3em;
+}
+
+article .cards_cont .card ul {
+  padding: 1.5em;
+}
+
+article .cards_cont .card ul li {
+  font-size: 1.5rem;
+  padding: 0.8em;
+  text-transform: capitalize;
+}
+
+article .cards_cont .card button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  padding: 0.3em 1.8em;
+  border-radius: 5px;
+  background: orange;
+  margin-bottom: 1.3em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+article .cards_cont .card button ion-icon {
+  margin-left: 1.3rem;
+  margin-bottom: -2.3px;
+}
+
+article .cards_cont .card button:hover {
+  background: #e6a100;
+  -webkit-box-shadow: 3px 3px 5px #666666;
+          box-shadow: 3px 3px 5px #666666;
+}
+
+article .cards_cont .card:hover {
+  -webkit-box-shadow: 3px 3px 8px #666666, -3px 10px 8px #666666;
+          box-shadow: 3px 3px 8px #666666, -3px 10px 8px #666666;
+}
+
+footer {
+  width: 100%;
+  background: #666666;
+  padding: 1em;
+}
+
+footer .footer_cont {
+  width: 100%;
+}
+
+footer .footer_cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_cont ul li {
+  padding: 1em 1.1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+footer .footer_cont ul li a {
+  color: white;
+}
+
+footer .footer_cont p {
+  text-align: end;
+  font-size: 1.3rem;
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 60.5%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section {
+    width: 100%;
+  }
+  section .services {
+    width: 75%;
+  }
+  section .services .service_row .service_icon {
+    width: 15%;
+  }
+  section .services .service_row .service_text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cards_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 53.5%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section .services {
+    width: 88%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 52.5%;
+  }
+  .container {
+    padding: 0 2.5em;
+  }
+  nav {
+    width: 100%;
+    display: block;
+    min-height: auto;
+    text-align: center;
+  }
+  nav .logo {
+    width: 100%;
+  }
+  nav .nav_items {
+    width: 100%;
+  }
+  nav .nav_items ul {
+    display: block;
+    padding: 1em;
+    padding-bottom: 2em;
+  }
+  main {
+    width: 100%;
+  }
+  main .banner {
+    width: 95%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  main .banner h1 {
+    font-size: 2rem;
+  }
+  main .banner input[type="email"] {
+    width: 50%;
+  }
+  section .services {
+    width: 100%;
+  }
+  section .service_video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 515px) {
+  html {
+    font-size: 51.5%;
+  }
+  main .banner h1 {
+    font-size: 2.3rem;
+  }
+  main .banner input[type="email"] {
+    width: 70%;
+  }
+  section {
+    width: 100%;
+  }
+  section .services .service_row {
+    display: block;
+    padding: 2.5em;
+  }
+  section .services .service_row .service_icon {
+    width: 100%;
+    text-align: center;
+  }
+  section .services .service_row .service_icon ion-icon {
+    text-align: center;
+  }
+  section .services .service_row .service_text {
+    text-align: center;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
